@@ -1,0 +1,77 @@
+.videoCardRow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 31px;
+}
+
+.videoCardContainer {
+    margin-top: 30px;
+}
+
+.videoCardContainer img {
+    width: 100%;
+}
+
+.videoCardHeading {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 15px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.videoCardHeading::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: -2px;
+}
+.orange .videoCardHeading::after{
+    background: linear-gradient(90deg, #EF4323 0%, #FAB818 99.95%);
+}
+
+.skyBlue .videoCardHeading::after{
+    background: linear-gradient(90deg, #2ABDBB 0%, #213944 99.95%);
+
+}
+
+.videoCardHeading h2,
+.videoCardHeading p {
+    margin: 0;
+}
+
+.singleVideoCard p {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    margin: 11px 0 0;
+}
+
+.countFlex{
+    display: flex;
+    align-items: center;
+    row-gap: 11px;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.singleVideoCard p:nth-of-type(odd){
+    color: #909CA2;
+}
+
+@media (max-width:991px) {
+    .videoCardRow {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:767px) {
+    .videoCardRow {
+        grid-template-columns: 100%;
+    }
+}

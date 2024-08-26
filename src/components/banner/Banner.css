@@ -1,0 +1,41 @@
+.heroBackground{
+padding: 30px;
+    width: 100%;
+    background-image: url('../../Assets/images//Hero\ background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.bannerSliderImg{
+    max-width: 960px;
+    height: 540px;
+    object-fit: cover;
+    margin: auto;
+    display: block;
+}
+.bannerSwiper .swiper-button-prev::after,
+.bannerSwiper .swiper-button-next::after{
+    content: '';
+background-repeat: no-repeat;
+background-size: 100%;
+width: 100%;
+height: 100%;
+}
+.bannerSwiper .swiper-button-disabled{
+    display: none;
+}
+
+.bannerSwiper .swiper-button-prev::after{
+    background-image: url('../../Assets/images/chevron-right-big.png');
+    transform: rotate(180deg);
+}
+
+.bannerSwiper .swiper-button-next::after{
+background-image: url('../../Assets/images/chevron-right-big.png');
+}
+
+.bannerSwiper .swiper-button-prev,
+.bannerSwiper .swiper-button-next{
+    width: 36px;
+    height: 36px;
+}

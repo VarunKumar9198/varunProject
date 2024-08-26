@@ -1,0 +1,35 @@
+.btngroupFlex{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.btngroupFlex button{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    padding: 10px 17px;
+}
+
+.btngroupFlex button:nth-of-type(1){
+    background-color: #F47521;
+    border: 1px solid #F47521;
+}
+.btngroupFlex button:nth-of-type(2){
+    background-color: transparent;
+    border: 1px solid #F47521;
+    color: #F47521;
+}
+
+.contentBox h2{
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 400;
+}
+
+.contentBox p{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}

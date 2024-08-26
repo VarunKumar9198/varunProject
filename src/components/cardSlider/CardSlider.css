@@ -1,0 +1,66 @@
+.cardSliderSectio2{
+    margin-top: 60px;
+}
+
+.cardSliderSectio2 .mainHeading{
+    line-height: 40px;
+    font-size: 32px;
+    font-weight: 400;
+    position: relative;   
+}
+
+.myCardSwiper{
+    margin-top: 30px;
+}
+
+.myCardSwiper .swiper-button-prev::after,
+.myCardSwiper .swiper-button-next::after{
+    content: '';
+background-repeat: no-repeat;
+background-size: 100%;
+width: 100%;
+height: 100%;
+filter: invert(100%) sepia(91%) saturate(38%) hue-rotate(321deg) brightness(110%) contrast(110%);
+}
+.myCardSwiper .swiper-button-disabled{
+    display: none;
+}
+
+.myCardSwiper .swiper-button-prev::after{
+    background-image: url('../../Assets/images/chevron-right-big.png');
+    transform: rotate(180deg);
+}
+
+.myCardSwiper .swiper-button-next::after{
+background-image: url('../../Assets/images/chevron-right-big.png');
+}
+
+.myCardSwiper .swiper-button-prev,
+.myCardSwiper .swiper-button-next{
+    width: 36px;
+    height: 36px;
+}
+.cardImg{
+    display: block;
+    margin: auto;
+}
+
+.cardHeading{
+    margin: 15px 0 6px ;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.cardDesc{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.sliderCard{
+   max-width: 150px;
+   margin: auto;
+}
+.cardSpecialText{
+    color: #2ABDBB;
+}

@@ -1,0 +1,34 @@
+.navHeader{
+    background-color: var(--darkBg);
+    color: var(--whiteColor);
+}
+
+.navHeader .nav-link,
+.navHeader .nav-link:hover,
+.navHeader  .nav-link:focus,
+.navHeader .nav-link.active{
+    color: var(--whiteColor) !important;
+}
+
+.sideNav{
+    display: flex;
+    align-items: center;
+    margin-inline-start: auto;
+}
+.manualNavToggle,
+.manualNavToggle:hover
+.manualNavToggle:focus{
+    background:none;
+    outline: unset;
+    border: unset;
+    box-shadow: unset !important;
+}
+
+
+
+
+@media (max-width:1199px){
+    .sideNav{
+        display: none;
+    }
+}
